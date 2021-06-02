@@ -1,0 +1,21 @@
+herramientas necesarias:
+-node
+-composer
+-php y mysql (a través de xampp o wamp)
+-laravel: https://laravel.com/docs/5.7/eloquent#eloquent-model-conventions
+
+para instalar :
+    -composer: ejecutar ".exe" para windows e instalar de forma normal (desde https://getcomposer.org/download/)
+    -node: https://www.apachefriends.org/es/download.html (desde https://nodejs.org/en/)
+    -xampp: https://www.apachefriends.org/es/download.html (desde https://www.apachefriends.org/es/download.html)
+    -laravel: ejecutar comando << composer global require laravel/installer >>
+
+crear proyecto laravel: 
+    - tener corriendo apache y mysql desde xampp
+    - ejecutar: composer create-project laravel/laravel example-app
+
+para correr proyecto laravel: php artisan serve
+crear la base de datos en xampp... phpmyadmin
+crear un modelo en laravel: php artisan make:model <nombre-modelo> -m
+crear campos de la BD en e¿la migracion correspondiente, luego...
+migrar el modelo: php artisan migrate
